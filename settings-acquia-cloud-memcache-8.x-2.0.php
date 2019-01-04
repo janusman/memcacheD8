@@ -97,7 +97,7 @@ if (getenv('AH_SITE_ENVIRONMENT') &&
       // Move locks to memcache.
       // MODIFY the following path (relative to DRUPAL_ROOT) depending on where
       //    you placed this file in your codebase.
-      $settings['container_yamls'][] = 'sites/all/memcache-locks.yml';
+      $settings['container_yamls'][] = __DIR__ . '/memcache-locks.yml';
 
       // OPTIONAL: Set compression; Research is inconclusive on the benefits of compression.
       // $settings['memcache']['options'][Memcached::OPT_COMPRESSION] = TRUE;
